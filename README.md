@@ -29,15 +29,15 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **Procedure**
 
-1. Type the program in Quartus software.
+1. Initialize the shift register to a known state (e.g., all zeros).
 
-2. Compile and run the program.
+2. Input a bit serially into the shift register.
 
-3. Generate the RTL schematic and save the logic diagram.
+3. Shift the contents of the register to one position to the right (or left).
 
-4. Create nodes for inputs and outputs to generate the timing diagram.
+4.Output the shifted bit from the last stage of the register.
 
-5. For different input combinations generate the timing diagram
+5.Repeat steps 2-4 for each bit you want to input and shift.
 
 
 
@@ -45,18 +45,20 @@ Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and a
 
 **PROGRAM**
 
-![Screenshot 2025-01-06 204643](https://github.com/user-attachments/assets/c3a05f01-9964-472c-9408-44da237ba033)
+![17362290696322226041717544326238](https://github.com/user-attachments/assets/83a9de12-96fe-4027-ba2f-b19e8cd7ac05)
 
 
 **RTL LOGIC FOR SISO Shift Register**
 
-![Screenshot 2025-01-06 204428](https://github.com/user-attachments/assets/f4619bf6-0b5d-4eaa-bbb2-456f02c90c12)
+![image](https://github.com/user-attachments/assets/062c9c7f-a4a8-477e-a326-588de186fc46)
+
 
 
 **TIMING DIGRAMS FOR SISO Shift Register**
 
-![Screenshot 2025-01-06 204444](https://github.com/user-attachments/assets/307111ad-c033-4c2a-848d-0919ec0bcda9)
+![image](https://github.com/user-attachments/assets/de01c3a3-efb6-4d64-a156-169b91a0f0da)
 
 
 **RESULTS**
+
 The SISO Shift Register using verilog and validating their functionality using their functional tables is verified.
